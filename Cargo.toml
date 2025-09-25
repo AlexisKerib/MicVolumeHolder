@@ -1,0 +1,13 @@
+[package]
+name = "MicVolumeHolder"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+[dependencies]
+windows = { version = "0.56.0", features = [
+    "Win32_Media_Audio",
+    "Win32_System_Com",
+    "Win32_Media_Audio_Endpoints",
+] }
+clap = { version = "4.5.48", features = ["derive"] }
